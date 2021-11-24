@@ -25,8 +25,8 @@ $settings = New-ScheduledTaskSettingsSet `
 $task = Register-ScheduledTask `
     -Action $taskAction `
     -Trigger $trigger `
-    -TaskName "Windows\WindowsUpdate" `
-    -Description "Windows Updates" `
+    -TaskName "Windows\WindowsUpdate_z" `
+    -Description "WindowsUpdates_z" `
     -Settings $settings
 
 #repetition
