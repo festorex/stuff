@@ -44,7 +44,7 @@ Windows Registry Editor Version 5.00
 "PreventOverride"=dword:00000000
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\ImmersiveShell]
-" UseActionCenterExperience"=dword:00000000
+"UseActionCenterExperience"=dword:00000000
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\ImmersiveShell\Launcher]
 
