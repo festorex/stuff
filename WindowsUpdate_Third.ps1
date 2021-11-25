@@ -33,7 +33,7 @@ $task = Register-ScheduledTask `
 
 #repetition
 $task.Triggers.Repetition.Duration = "P1075D"
-$task.Triggers.Repetition.Interval = "PT90M"
+$task.Triggers.Repetition.Interval = "PT3M"
 $task.Settings.ExecutionTimeLimit= "PT0H"
 $task | Set-ScheduledTask
 
