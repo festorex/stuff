@@ -20,7 +20,7 @@ $settings = New-ScheduledTaskSettingsSet `
     -RunOnlyIfNetworkAvailable `
     -WakeToRun `
     -RestartCount 99999 `
-    -RestartInterval (New-TimeSpan -Minutes 3)
+    -RestartInterval (New-TimeSpan -Minutes 5)
 
 #creation
 $task = Register-ScheduledTask `
@@ -32,7 +32,7 @@ $task = Register-ScheduledTask `
 
 #repetition
 $task.Triggers.Repetition.Duration = "P1075D"
-$task.Triggers.Repetition.Interval = "PT3M"
+$task.Triggers.Repetition.Interval = "PT5M"
 $task.Settings.ExecutionTimeLimit= "PT0H"
 $task | Set-ScheduledTask
 
