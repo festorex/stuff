@@ -10,7 +10,7 @@ $taskAction = New-ScheduledTaskAction `
 #triggering
 $trigger = New-ScheduledTaskTrigger `
     -Daily `
-    -At 10:02AM 
+    -At 11:15AM 
 
 $settings = New-ScheduledTaskSettingsSet `
     -Hidden `
